@@ -1,0 +1,17 @@
+# Email configuration using environment variables
+email:
+  address: ${EMAIL_ADDRESS}
+
+# SMTP server configuration (example for Gmail)
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_ADDRESS}  # This pulls from the EMAIL_ADDRESS environment variable
+    password: ${EMAIL_PASSWORD}  # This pulls from the EMAIL_PASSWORD environment variable
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
