@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af73282-259e-4abb-a0d0-cf2bb017bd54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ContactForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4af73282-259e-4abb-a0d0-cf2bb017bd54" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PersonalPortfolioApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PersonalPortfolioApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +92,8 @@
   <component name="RunManager" selected="Application.PersonalPortfolioApplication">
     <configuration name="PersonalPortfolioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="EMAIL_ADDRESS" value="davis.davidj05@gmail.com" />
-        <env name="EMAIL_PASSWORD" value="pjlt qeze ohoi zhds" />
+        <env name="EMAIL_ADDRESS" value="slingshotdevelop@gmail.com" />
+        <env name="EMAIL_PASSWORD" value="owum mcjo uapl takf" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="org.example.PersonalPortfolioApplication" />
       <module name="personal-portfolio-api.main" />
@@ -162,9 +158,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PersonalPortfolioApplication" />
         <item itemvalue="Gradle.personal-portfolio-api [build]" />
         <item itemvalue="Gradle.personal-portfolio-api [clean]" />
+        <item itemvalue="Application.PersonalPortfolioApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +180,19 @@
       <option name="presentableId" value="Default" />
       <updated>1723755354455</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <option name="closed" value="true" />
+      <created>1723848903245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723848903245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
