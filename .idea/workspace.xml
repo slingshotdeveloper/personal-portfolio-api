@@ -88,7 +88,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PersonalPortfolioApplication">
+  <component name="RunManager" selected="Gradle.personal-portfolio-api [build]">
     <configuration name="PersonalPortfolioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.PersonalPortfolioApplication" />
       <module name="personal-portfolio-api.main" />
@@ -153,9 +153,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PersonalPortfolioApplication" />
         <item itemvalue="Gradle.personal-portfolio-api [build]" />
         <item itemvalue="Gradle.personal-portfolio-api [clean]" />
+        <item itemvalue="Application.PersonalPortfolioApplication" />
       </list>
     </recent_temporary>
   </component>
