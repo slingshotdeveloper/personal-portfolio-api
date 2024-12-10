@@ -1,14 +1,26 @@
-# Use a lightweight OpenJDK base image
-FROM openjdk:21-jdk-slim
+# Use a compatible Gradle image
+FROM gradle:8.5-jdk21 AS build
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the built jar file into the container
-COPY build/libs/personal-portfolio-api-1.0-SNAPSHOT.jar app.jar
+# Copy the project files
+COPY . .
 
-# Expose the port your app runs on
+# Run the Gradle build
+RUN gradle clean build --no-daemon
+
+# Use the OpenJDK runtime for the application
+FROM openjdk:21-jdk-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the built JAR file from the build stage
+COPY --from=build /app/build/libs/*.jar app.jar
+
+# Expose the application port
 EXPOSE 8080
 
-# Command to run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application
+CMD ["java", "-jar", "app.jar"]
