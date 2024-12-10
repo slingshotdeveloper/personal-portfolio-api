@@ -18,8 +18,6 @@ public class EmailService {
     private JavaMailSender mailSender;
     @Value("${email.address}")
     private String myEmail;
-    @Value("${display.name}")
-    private String displayName;
     public void sendEmail(ContactForm contactForm) throws MessagingException, UnsupportedEncodingException {
         try {
             String firstName = capitalizeFirstLetter(contactForm.getFirstName());
@@ -33,7 +31,6 @@ public class EmailService {
             helper.setSubject("Dev Inquiry - " + contactForm.getSubject());
             helper.setText("From: " + firstName + " " + lastName + "\n\n" + "Email: " + contactForm.getEmail() + "\n\n" + "Message: " + "\n" + contactForm.getMessage());
             mailSender.send(message);
-
             sendConfirmationEmail(contactForm.getEmail(), firstName);
         } catch(MessagingException e) {
             throw new MessagingException("Failed to send email: " + e.getMessage(), e);
@@ -47,7 +44,7 @@ public class EmailService {
             MimeMessage confirmationMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(confirmationMessage);
             String fromEmail = myEmail;
-            helper.setFrom(new InternetAddress(fromEmail, displayName));
+            helper.setFrom(new InternetAddress(fromEmail, "SlingShot Dev"));
             helper.setTo(recipientEmail);
             helper.setSubject("Message Confirmation");
             helper.setText("Hey " + firstName + ",\n\nThanks for reaching out! I have received your message and will get back to you shortly.\n\nBlessings,\n\nDavid Davis");
