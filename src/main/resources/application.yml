@@ -13,3 +13,14 @@ spring:
           auth: true
           starttls:
             enable: true
+
+logging:
+  level:
+    org.example.controller: DEBUG
+    org.example.service: DEBUG
+    org.springframework: INFO
+    root: INFO
+  file:
+    name: logs/application.log
+    max-size: 10MB
+    max-history: 7
